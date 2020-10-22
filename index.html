@@ -1,11 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Parte de mi portafolio para mostrar mis habilidades en Html y Css">
+   <meta name="robots" content="index-follow">
    <title>proyecto personal rama formularios</title>
 </head>
 <body>
-   
+   <main>
+      <header>
+         <h1>Aqui van nuestras practicas de los formularios</h1>
+      </header>
+      <section>
+         <h2>Probemos un formulario de texto, y calendario en la primera forma </h2>
+
+            <h3>Usando los formularios con todas sus caracteristicas aprendidas</h3>
+
+         <form action="">
+            <label for="nombre">
+               <span>Cual es tu nombre? Aqui usamos autocomplete</span>
+               <input type="text" name="nombre" id="nombre" placeholder="tu nombre aqui" autocomplete="name" required>
+            </label>
+            <label for="apellido">
+               <span>Cual es tu apellido? Aqui usamos autocomplete</span>
+               <input type="text" name="apellido" id="apellido" placeholder="tu apellido aqui" autocomplete="name" required>
+            </label>
+            <label for="mascota">
+               <span>Cual el mascota de tu mascota? aqui NO usamos required</span>
+               <input type="text" name="mascota" id="mascota" placeholder="tu mascota aqui" autocomplete="name">
+            </label>
+            <input type="submit" value="Enviar con input">
+            <button type="submit">Enviar con button</button>
+         </form>
+
+            <h3>Aqui probamos el calendario en la primera forma (la forma dificil)</h3>
+
+         <form action="">
+            <label for="hora">
+               <span>Que hora tienes en el reloj?</span>
+               <input type="time" name="hora" id="hora">
+            </label>
+         </form>
+         <form action="">
+            <label for="fecha">
+               <span>que fecha es hoy?</span>
+               <input type="date" name="fecha" id="fecha">
+            </label>
+         </form>
+         <form action="">
+            <label for="semana">
+               <span>En que semana estamos?</span>
+               <input type="week" name="semana" id="semana">
+            </label>
+         </form>
+      </section>
+
+         <h4>Aqui agregamos el calendario con la forma facil</h4>
+
+         <section>
+            <form action="">
+               <label for="calendario">
+               <span>Calendario facil</span>
+               <input type="datetime-local" id="calendario" name="calendario">
+               </label>
+               <button type="submit">Enviar Calendario</button><!-- tiene que ir adentro del form -->
+            </form>
+         </section>
+
+            <h3>Aqui los formularios con drop menu</h3>
+
+         <section>
+            <span>Tu pais, aqui usamos las etiquetas <\input list> y <\datalist> <\option></span>
+               <input list="pais">
+                  <datalist id="pais">
+                     <option value="GT"></option>
+                     <option value="MX"></option>
+                     <option value="CA"></option>
+                     <option value="USA"></option>
+                     <option value="FR"></option>
+                  </datalist>
+            <span>Tu genero</span>
+               <input list="sexo">
+                  <datalist id="sexo">
+                     <option value="hombre"></option>
+                     <option value="mujer"></option>
+                     <option value="indefinido"></option>
+                     <option value="Robot"></option>
+                     <option value="que mal educado eso no se pregunta"></option>
+                  </datalist>
+         </section>
+      <h3>Tambien los botones con solo input y submit pero esos ya esta agregados arriba</h3>
+   </main>
 </body>
 </html>
